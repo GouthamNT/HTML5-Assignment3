@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <script src="Validation.js"></script>
+    </head>
+    <body>
+        <section id=heading>
+            Welcome
+        </section>
+        <section id=new-user>
+            <form action="Success.html">
+            <p>
+                <label>Email :</label>
+                <input type="email" placeholder="ex@gmail.com" required>
+            </p>
+            <p>
+                <label>Password :</label>
+                <input type="Password" minlength="6" required>
+            </p>
+            <p>
+                <label>Your project URL :</label>
+                <input type="url" placeholder="http://ex.com" required>
+            </p>
+            <p>
+                <label>Project Completion date :</label>
+                <input type="date" required>
+            </p>
+            <p>
+                <label>Current Month :</label>
+                <input type="month" required>
+            </p>
+            <p>
+                <label>Current Week :</label>
+                <input type="week" maxlength="6" required>
+            </p>
+            <p>
+                <label>Current Time :</label>
+                <input type="time" maxlength="6" required>
+            </p>
+                <p>
+                <label>Select Color :</label>
+                <input type="color" maxlength="6" required>
+            </p>
+                <p>
+                    <label>Age :</label>
+                    <input type="range" id=ageip min="22" max="45" step="1" value=23 onmouseup="ageDisplay()" required>
+                    <span id="age"></span>
+                </p>
+                <p>
+                    <label>Hobbies : </label>
+                    <input type="text" list="hobbies" name="mycountry" placeholder="Hobbies" required/>
+                    <datalist id="hobbies">
+                        <option value="Stamp Collection">Stamp Collection</option>
+                        <option value="Browsing">Browsing</option>
+                        <option value="Skying">Skying</option>
+                        <option value="Diving">Diving</option>
+                        <option value="Developing">Developing</option>
+                        <option value="Photography">Photography</option>
+                        <option value="Filming">Filming</option>
+                        <option value="Novels">Novels</option>
+                        <option value="Playing">Playing</option>
+                        <option value="Service">Service</option>
+                    </datalist>
+
+                </p>
+            
+            <button>Submit</button>
+                </form>
+        </section>
+    </body>
+</html>
